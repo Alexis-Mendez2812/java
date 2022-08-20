@@ -55,6 +55,11 @@ public class Main {
             System.out.println("no es estacion" );
     }
 
+        Persona Carlos = new Persona();
+        Carlos.setNombre("Carlos");
+        Carlos.setEdad(26);
+        Carlos.setTelefono(12345678);
+        System.out.println("Hola soy " + Carlos.getNombre() + " tengo " + Carlos.getEdad() + " años de edad y mi numero de telefono es " + Carlos.getTelefono() );
 
 
     }
@@ -68,5 +73,43 @@ class Coche {
 
     public void setPuertas() {
         this.puertas++;
+    }
+}
+
+//Crear clase Persona.
+//
+//Crear variables las privadas edad, nombre y telefono de la clase Persona.
+//
+//Crear gets y sets de cada propiedad.
+//
+//Crear un objeto persona en el main.
+
+class Persona{
+    private int edad;
+    private String nombre;
+    private int telefono;
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
     }
 }
